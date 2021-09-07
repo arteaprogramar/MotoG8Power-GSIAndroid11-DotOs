@@ -11,16 +11,21 @@ In this article I show you how to install GSI Android 11 on your Moto G8 Power
 
 ### How to install GSI Android 11 DotOs
 
-´´´
+```
+
 Folder structure
+
 --> Root
 -----> platform-tools
 -----> GSI
    ----> dotOS-R-v5.1.3-arm64-GAPPS-OFFICIAL.img
    ----> vbmeta.img
 
+```
 
-# Commands 
+### Commands 
+
+```
 ../platform-tools/fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 ../platform-tools/fastboot reboot fastboot
 ../platform-tools/fastboot erase system
@@ -33,4 +38,4 @@ Folder structure
 
 # Note: In recovery you will have to do "Data Factory Reset"
 
-´´´
+```
